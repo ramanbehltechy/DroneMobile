@@ -1,0 +1,6 @@
+module Pods_DroneFlightMobile {
+  umbrella header "Pods-DroneFlightMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
