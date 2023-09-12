@@ -5,7 +5,6 @@ export const getNearByShows = async (payload) => {
  
   try {
     const response = await fetchNearByShows(payload);
-    
     return response.data;
   } catch (error) {
     throw new Error(handleErrorResponse(error));

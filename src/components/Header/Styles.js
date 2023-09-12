@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colorConstant, fontFamily } from "../../constants/colorConstant";
+import { colorConstant } from "../../constants/colorConstant";
 
 const styles = StyleSheet.create({
     container: {
@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
       fontWeight: '500',
       fontSize: 20,
       color:colorConstant.white,
-      fontFamily:fontFamily.fontFamily,
     },
     image:{
       resizeMode:'contain'

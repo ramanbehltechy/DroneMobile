@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colorConstant, fontFamily } from "../../constants/colorConstant";
+import { colorConstant } from "../../constants/colorConstant";
 
 const styles = StyleSheet.create({
     infoContainer: {
@@ -15,13 +15,11 @@ const styles = StyleSheet.create({
         fontStyle:'normal',
         fontWeight: '500',
         fontSize: 18,
-        color:colorConstant.white,
-        fontFamily:fontFamily.fontFamily
+        color:colorConstant.white
         },
     locationContainer: {
         flexDirection: 'row',
-        marginTop:12 ,
-        alignItems:'center'
+        marginTop:12 
         },
     locationIcon: {
         marginRight: 6,
@@ -31,8 +29,7 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         fontSize: 14,
         color:colorConstant.textColor,
-        maxWidth:250,
-        fontFamily:fontFamily.fontFamily
+        maxWidth:250
         },
     playIcon: {
         marginLeft: 'auto',

@@ -14,6 +14,8 @@ export const imagePath={
     NoMusic:require('../assets/images/NoMusic.png'),
     RotatingEarth:require('../assets/images/RotatingEarth.gif'),
     SkyElementLogo:require('../assets/images/SkyElementLogo.png'),
-    GlobeImage:require('../assets/images/GlobeImage.png')
+    GlobeImage:require('../assets/images/GlobeImage.png'),
+    playerLogo:require('../assets/images/logo-lg.png'),
+    
 
 }

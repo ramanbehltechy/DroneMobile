@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { imagePath } from '../../constants/imagePaths';
 import styles from './Style';
@@ -7,7 +7,7 @@ import TrackPlayer, {
   State,
 } from 'react-native-track-player';
 import { useSelector } from 'react-redux';
-import { baseURL } from '../../constants/apiConstant';
+import { MP3_FILE_BASE_URL, baseURL } from '../../constants/apiConstant';
 
 const SearchShowPlay = ({showData}) => {
   const playbackState = usePlaybackState();
@@ -19,14 +19,21 @@ const SearchShowPlay = ({showData}) => {
 
   const [currentShowId, setCurrentShowId] = useState(null);
   const singleSearchShow=useSelector(state=>state.singleSearchShow.selectedShow);
-
+  const playedRef = useRef(false);
 
   useEffect(() => {
+    setupAudioTracks()
+
     const timer = setInterval(() => {
       const remaining = getRemainingTime();
       setRemainingTime(remaining);
       if (remaining <= 0) {
-        setupAudioTracks()
+        //setupAudioTracks()
+        //added
+        if (!playedRef.current) {
+          playedRef.current = true;
+          togglePlay();
+        }
         clearInterval(timer);
       } else {
         const formattedTime = formatTime(remaining);
@@ -63,27 +70,28 @@ const SearchShowPlay = ({showData}) => {
   showTime.setHours(showHours, showMinutes, 0);
 
 
-  useEffect(() => {
+ {/* useEffect(() => {
 
     if (currentShowId !== showData?._id) {
       setupAudioTracks();
     }
   }, [showData?._id]);
+*/}
 
   const setupAudioTracks = async () => {
     
     let timeTrack=  Math.max(showTime.getTime() -  new Date().getTime(), 0);
-    await TrackPlayer.reset();
+   // await TrackPlayer.reset();
 
     TrackPlayer.addEventListener('playback-queue-ended', async event => {});
     const tracks = [];
 
-    if (timeTrack <= 0) {
+    //if (timeTrack <= 0) {
       if (showData.pre_show && showData.premp3) {
         
         tracks.push({
-          id: showData.premp3.id,
-          url: `${baseURL}/${showData.premp3.filePath}`, // Assuming this is a remote URL
+         
+          url: `${MP3_FILE_BASE_URL}/${showData?.premp3?.fileName}`, // Assuming this is a remote URL
 
           title: showData.showTitle,
           artist: 'Artist',
@@ -95,8 +103,8 @@ const SearchShowPlay = ({showData}) => {
       if (showData.main_show && showData.mainmp3) {
         
         tracks.push({
-          id: showData.mainmp3.id,
-          url: `${baseURL}/${showData.mainmp3.filePath}`, // Assuming this is a remote URL
+          
+          url: `${MP3_FILE_BASE_URL}/${showData?.mainmp3?.fileName}`, // Assuming this is a remote URL
           title: showData.showTitle,
           artist: 'Artist',
           artwork: imagePath.AudioIcon,
@@ -107,14 +115,14 @@ const SearchShowPlay = ({showData}) => {
       if (showData.post_show && showData.postmp3) {
         
         tracks.push({
-          id: showData.postmp3.id,
-          url: `${baseURL}/${showData.postmp3.filePath}`, // Assuming this is a remote URL
+         
+          url: `${MP3_FILE_BASE_URL}/${showData?.postmp3?.fileName}`, // Assuming this is a remote URL
           title: showData.showTitle,
           artist: 'Artist',
           artwork: imagePath.AudioIcon,
         });
-      }
-    } else{
+     }
+   {/*} } else{
       if (showData.pre_show && showData.premp3) {
 
         tracks.push({
@@ -129,7 +137,7 @@ const SearchShowPlay = ({showData}) => {
       // For Main Show
       if ( showData.main_show && showData.mainmp3) {
         tracks.push({
-          id: showData.mainmp3.id,
+id: showData.mainmp3.id,
           url: ``, 
           title: showData.showTitle,
           artist: 'Artist',
@@ -147,14 +155,27 @@ const SearchShowPlay = ({showData}) => {
           artwork: imagePath.AudioIcon
         });
       }
-    }
+    }*/}
     await TrackPlayer.add(tracks);
 
-    setCurrentShowId(showData?._id);
+    //setCurrentShowId(showData?._id);
   };
+  //added
+  const togglePlay=async()=>{
+    await setupAudioTracks();
+    // const queue = await TrackPlayer.getQueue();
+    try {
+      await TrackPlayer.play();
+  } catch (err) {
+    console.log('error at track player playing', err);
+} 
+
+}
   const toggleAudio = async playbackState => {
      
       const currentTrack = await TrackPlayer.getCurrentTrack();
+      const remaining = getRemainingTime();
+      if (remaining <= 0) {
       
       if (currentTrack !== null) {
         if (
@@ -168,6 +189,7 @@ const SearchShowPlay = ({showData}) => {
           await TrackPlayer.pause();
         }
       }
+    }
     }
   return (
     <View style={styles.container}>

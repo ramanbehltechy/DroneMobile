@@ -1,10 +1,9 @@
-import { StyleSheet,Platform } from "react-native";
+import { StyleSheet } from "react-native";
 import { colorConstant } from "../../constants/colorConstant";
 const styles = StyleSheet.create({
     container: {
-      flex:1,
-      paddingHorizontal:16,
-      marginHorizontal:Platform.OS==='ios'?16:0,
+      // paddingHorizontal: 16
+      flex: 1, 
     },
     listContainer: {
       flexGrow: 1,
@@ -30,15 +29,12 @@ const styles = StyleSheet.create({
       color: colorConstant.white,
       fontSize: 16,
       fontStyle: 'normal',
-      fontWeight: '400',
-      alignItems:'center',
-      paddingVertical:Platform.OS==='ios'?16:10
+      fontWeight: '400', 
+      paddingVertical: 15, 
     },
-    NoResultFound:{
-      flex:1,
-      justifyContent:'center',
-      alignItems:'center'
-    } 
+    search_view: {
+      flex: 1
+    }, 
   });
 
   export default styles;

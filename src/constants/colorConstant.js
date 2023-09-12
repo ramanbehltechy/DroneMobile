@@ -7,6 +7,3 @@ export const colorConstant={
     transparent:'transparent',
     bottomtab:'#22233B'
 }
-export const fontFamily={
-    fontFamily: 'Inter-Regular'
-}

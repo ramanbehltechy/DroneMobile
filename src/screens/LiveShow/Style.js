@@ -1,46 +1,46 @@
-import { StyleSheet,Platform} from "react-native";
-import { fontFamily } from "../../constants/colorConstant";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-     paddingHorizontal:16,
-     paddingTop:30,
-     marginHorizontal:Platform.OS==='ios'?16:0,
-     
-
-    },
-    mapContainer: {
-      borderRadius: 10,
-      overflow: 'hidden',
-      marginTop:Platform.OS==='ios'?30:0
-    },
-   showList:{
-    marginTop:30,
-   },
-   noShowAvailable:{
-    marginTop:45.5
-   },
-   playShow:{
-    marginTop:29
-   }, 
+  container: {
+    flex: 1, 
+    paddingBottom: 20, 
+    paddingHorizontal: 16,
+    paddingTop: Platform.OS === 'android' ? 30 : 5
+  },
+  mapContainer: {
+    borderRadius: 10,
+    overflow: 'hidden',
+    //  marginBottom:30
+  },
+  showList: {
+    marginTop: 30,
+    paddingBottom: 10
+  },
+  noShowAvailable: {
+    marginTop: 45.5,
+    paddingBottom: 10
+  },
+  playShow: {
+    marginTop: 29
+  },
   flatListContainer: {
-    maxHeight: 300, 
-    overflow:'scroll',
+    maxHeight: 300,
+    overflow: 'scroll',
   },
   textContainer: {
-marginTop:80,
+    marginTop: 80,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
+    paddingBottom: 10
   },
   text: {
     color: 'white',
     textAlign: 'center',
     fontSize: 16,
-    fontFamily:fontFamily.fontFamily
   },
-  
-   
-  });
 
-  export default styles;
+
+});
+
+export default styles;

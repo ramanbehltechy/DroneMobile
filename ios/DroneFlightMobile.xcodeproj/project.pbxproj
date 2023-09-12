@@ -13,12 +13,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-DroneFlightMobile-DroneFlightMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DroneFlightMobile-DroneFlightMobileTests.a */; };
-		FA2133BE2A57ECD000A58116 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2133BD2A57ECD000A58116 /* libBVLinearGradient.a */; };
-		FA2133C02A57F90C00A58116 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2133BF2A57F90C00A58116 /* Launch.storyboard */; };
-		FA7D38CD2A52C9CF001EEE7E /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D38CC2A52C9CF001EEE7E /* dummy.swift */; };
-		FA7D38D12A52DDB7001EEE7E /* libreact-native-google-maps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7D38D02A52DDB7001EEE7E /* libreact-native-google-maps.a */; };
-		FA7D38D32A5300F3001EEE7E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7D38D22A5300F3001EEE7E /* AVFoundation.framework */; };
-		FAD37E7C2A5577AC003B7E52 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD37E7B2A5577AB003B7E52 /* Inter-Regular.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +41,9 @@
 		5709B34CF0A7D63546082F79 /* Pods-DroneFlightMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneFlightMobile.release.xcconfig"; path = "Target Support Files/Pods-DroneFlightMobile/Pods-DroneFlightMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-DroneFlightMobile-DroneFlightMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneFlightMobile-DroneFlightMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-DroneFlightMobile-DroneFlightMobileTests/Pods-DroneFlightMobile-DroneFlightMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-DroneFlightMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DroneFlightMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DroneFlightMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DroneFlightMobile-DroneFlightMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroneFlightMobile-DroneFlightMobileTests.release.xcconfig"; path = "Target Support Files/Pods-DroneFlightMobile-DroneFlightMobileTests/Pods-DroneFlightMobile-DroneFlightMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FA2133BD2A57ECD000A58116 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA2133BF2A57F90C00A58116 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
-		FA7D38CB2A52C9CE001EEE7E /* DroneFlightMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DroneFlightMobile-Bridging-Header.h"; sourceTree = "<group>"; };
-		FA7D38CC2A52C9CF001EEE7E /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
-		FA7D38CE2A52DD7F001EEE7E /* libreact-native-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7D38D02A52DDB7001EEE7E /* libreact-native-google-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-google-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7D38D22A5300F3001EEE7E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		FAD37E7B2A5577AB003B7E52 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2133BE2A57ECD000A58116 /* libBVLinearGradient.a in Frameworks */,
-				FA7D38D32A5300F3001EEE7E /* AVFoundation.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-DroneFlightMobile.a in Frameworks */,
-				FA7D38D12A52DDB7001EEE7E /* libreact-native-google-maps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +90,8 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				FA2133BF2A57F90C00A58116 /* Launch.storyboard */,
 			);
 			name = DroneFlightMobile;
 			sourceTree = "<group>";
@@ -114,10 +99,6 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA2133BD2A57ECD000A58116 /* libBVLinearGradient.a */,
-				FA7D38D22A5300F3001EEE7E /* AVFoundation.framework */,
-				FA7D38D02A52DDB7001EEE7E /* libreact-native-google-maps.a */,
-				FA7D38CE2A52DD7F001EEE7E /* libreact-native-maps.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-DroneFlightMobile.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-DroneFlightMobile-DroneFlightMobileTests.a */,
@@ -135,15 +116,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				FAD37E7B2A5577AB003B7E52 /* Inter-Regular.ttf */,
-				FA7D38CC2A52C9CF001EEE7E /* dummy.swift */,
 				13B07FAE1A68108700A75B9A /* DroneFlightMobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DroneFlightMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				FA7D38CB2A52C9CE001EEE7E /* DroneFlightMobile-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -229,7 +207,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1430;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -264,9 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD37E7C2A5577AC003B7E52 /* Inter-Regular.ttf in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				FA2133C02A57F90C00A58116 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				FA7D38CD2A52C9CF001EEE7E /* dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,8 +430,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-DroneFlightMobile-DroneFlightMobileTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQGF78U5K3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -482,9 +458,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-DroneFlightMobile-DroneFlightMobileTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = MQGF78U5K3;
 				INFOPLIST_FILE = DroneFlightMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,21 +485,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = MQGF78U5K3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DroneFlightMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SkyElements;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyelements.dronetunes;
 				PRODUCT_NAME = DroneFlightMobile;
-				SWIFT_OBJC_BRIDGING_HEADER = "DroneFlightMobile-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = DroneTunesProvision;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DroneTunesProvision;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -536,20 +520,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = MQGF78U5K3;
 				INFOPLIST_FILE = DroneFlightMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SkyElements;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyelements.dronetunes;
 				PRODUCT_NAME = DroneFlightMobile;
-				SWIFT_OBJC_BRIDGING_HEADER = "DroneFlightMobile-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = DroneTunesProvision;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DroneTunesProvision;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

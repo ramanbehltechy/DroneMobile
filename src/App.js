@@ -8,8 +8,12 @@ import { LogBox } from 'react-native';
 
 
 const App = () => {
-  React.useEffect(async () => {
-    await TrackPlayer.setupPlayer();
+  React.useEffect(() => {
+    async function runPlayer() {
+      await TrackPlayer.setupPlayer({ waitForBuffer: true, playBuffer: 5})
+    }
+
+    runPlayer();
   })
   React.useEffect(() => {
     LogBox.ignoreAllLogs(true)

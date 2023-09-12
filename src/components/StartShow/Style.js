@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colorConstant, fontFamily } from "../../constants/colorConstant";
+import { colorConstant } from "../../constants/colorConstant";
 
 const styles = StyleSheet.create({
     start_show_container:{
@@ -21,8 +21,7 @@ const styles = StyleSheet.create({
         fontStyle:'normal',
         fontWeight: '500',
         fontSize: 18,
-        color:colorConstant.white,
-        fontFamily:fontFamily.fontFamily
+        color:colorConstant.white
         },
     locationContainer: {
         flexDirection: 'row',
@@ -36,7 +35,6 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         fontSize: 14,
         color:colorConstant.textColor,
-        fontFamily:fontFamily.fontFamily
         },
     playIcon: {
         marginLeft: 'auto',

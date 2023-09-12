@@ -8,7 +8,7 @@ export const showSearchActions = (payload) => {
     dispatch({type:FETCH_SEARCH_REQUEST});
 
     try {
-      const results = await getShowsBySearch(payload);   
+      const results = await getShowsBySearch(payload); 
       
       dispatch({type:FETCH_SEARCH_SUCCESS,payload: results})
     } catch (error) {

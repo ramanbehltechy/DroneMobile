@@ -8,5 +8,3 @@ export {default as NoShowAvailable} from './NoShowAvailable/NoShowAvailable';
 export {default as LiveShow} from './LiveShow/LiveShow';
 export {default as PlayShow} from './PlayShow/PlayShow';
 export {default as StartShow} from './StartShow/StartShow';
-export {default as GradientText} from './GradientComp/GradientText';
-export {default as GradientImage} from './GradientComp/GradientImage';

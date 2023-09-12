@@ -1,40 +1,62 @@
 import React from 'react';
-import { View,  StyleSheet,FlatList, SafeAreaView, Platform} from 'react-native';
+import { ScrollView, View, StyleSheet, FlatList, Image } from 'react-native';
 
 import { LinearGradientComponent, LiveShow, Map, PlayShow, StartShow } from '../../components';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { imagePath } from '../../constants/imagePaths';
+import { useSelector } from 'react-redux';//
 
 
 const StartShowScreen = () => {
- 
+  const showDetails = useSelector(state => state.singleShow.showByLocation);//
   return (
     <LinearGradientComponent>
-    <SafeAreaView style={styles.container}>
-        <View style={styles.mapContainer}>
-        <Map/>
+      <SafeAreaView style={{
+        flex: 1, 
+      }}>
+        <View style={{
+          alignItems: 'center',
+          paddingVertical: 5
+        }}>
+          <Image
+            source={imagePath.SkyElementLogo}
+            resizeMode='contain'
+          />
         </View>
-        {/* For Playing Show Available or have time to Start */}
-        <View style={styles.playShow}>
-          <PlayShow/>
-        </View>
-    </SafeAreaView>
+        <ScrollView style={styles.container}>
+          <View style={styles.mapContainer}>
+          <Image
+            source={imagePath.playerLogo}
+            resizeMode='cover'
+            style={{width:'100%'}}
+          />
+          </View>
+          {/* For Playing Show Available or have time to Start */}
+          <View style={styles.playShow}>
+            <PlayShow showData={showDetails}/>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </LinearGradientComponent>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-   paddingHorizontal:16,
-   paddingTop:30,
-   marginHorizontal:Platform.OS==='ios'?16:0,
+    flex: 1, 
+    paddingHorizontal: 16,
+    paddingTop: Platform.OS === 'android' ? 30 : 5
   },
   mapContainer: {
+    //flex: 1, 
+    alignItems:'center',
     borderRadius: 10,
     overflow: 'hidden',
-    marginTop:Platform.OS==='ios'?30:0
-  //  marginBottom:30
+    //  marginBottom:30
   },
-  playShow:{
-    marginTop:29
+  playShow: {
+    marginTop: 29, 
+    paddingBottom: 30
   },
 });
 

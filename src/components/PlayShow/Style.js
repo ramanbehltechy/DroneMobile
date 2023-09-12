@@ -1,5 +1,5 @@
-import { StyleSheet ,Platform} from "react-native";
-import { colorConstant, fontFamily } from "../../constants/colorConstant";
+import { StyleSheet } from "react-native";
+import { colorConstant } from "../../constants/colorConstant";
 
 const styles = StyleSheet.create({
     container: {
@@ -21,8 +21,7 @@ const styles = StyleSheet.create({
       marginTop: 26,
       fontStyle: 'normal',
       textAlign:'center',
-      color:colorConstant.white,
-      fontFamily:fontFamily.fontFamily
+      color:colorConstant.white
     },
     description: {
       fontSize: 16,
@@ -31,7 +30,6 @@ const styles = StyleSheet.create({
       fontStyle: 'normal',
       textAlign:'center',
       color:colorConstant.textColor,
-      fontFamily:fontFamily.fontFamily
     },
     showTime: {
       fontSize: 16,
@@ -39,7 +37,6 @@ const styles = StyleSheet.create({
       fontStyle: 'normal',
       textAlign:'center',
       color:colorConstant.blue,
-      fontFamily:fontFamily.fontFamily
     },
     timerContainer: {
       flexDirection: 'row',
@@ -52,7 +49,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       marginHorizontal: 10,
       backgroundColor:colorConstant.blue,
-      paddingVertical:Platform.OS==='ios'?3:1,
+      paddingVertical:1,
       paddingHorizontal:12,
       borderRadius:4
     },
@@ -61,8 +58,7 @@ const styles = StyleSheet.create({
       fontWeight: '400',
       fontStyle: 'normal',
       textAlign:'center',
-      color:colorConstant.white,
-      fontFamily:fontFamily.fontFamily
+      color:colorConstant.white
     },
     timerLabel: {
       fontSize: 16,
@@ -71,18 +67,12 @@ const styles = StyleSheet.create({
       fontStyle: 'normal',
       textAlign:'center',
       color:colorConstant.white,
-      fontFamily:fontFamily.fontFamily
-    },
-    colenWrapper:{
-      justifyContent:'center',
-      alignItems:'center'
     },
     timerColon: {
       fontSize: 32,
       fontWeight: '400',
       color: colorConstant.white,
-      textAlign:'center',
-      fontFamily:fontFamily.fontFamily
+      textAlign:'center'
   },
       timer_view:{
           marginTop:30
